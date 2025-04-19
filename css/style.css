@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+:root{
+    --text-color:#f5f5f5;
+    --bg-color:#250821;
+}
+body{
+    font-family: sans-serif;
+}
+ section{
+    background-image: linear-gradient(to right,#250821,#49c8f2);
+ }
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to right,#250821,#49c8f2);
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0px 0px 15px black;
+}
+.logo{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#m{
+    color: #49c8f2;
+}
+.nav{
+    display: flex;
+    gap:
+}
+.nav a{
+    color:var(--text-color);
+    font-weight:700;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+.nav a:hover{
+    color:var(--bg-color);
+    text-shadow: 0 0 10px var(--bg-color);
+    border-bottom: 3px solid var(--bg-color);
+    transform: scale(1.02);
+}
+.menu{
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    display: none;
+}
+.home{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    color: var(--text-color);
+    justify-content: space-around;
+    align-items: center;
+}
+.myself{
+    width: 50%;
+}
+.my{
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+}
+.ff{
+    color: #49c8f2;
+}
+.resume{
+    width: 200px;
+    padding: 10px;
+    background-color:#49c8f2;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    box-shadow: 0px 0px 15px #49c8f2;
+    transition: all 0.5s ease-in-out;
+}
+.resume a{
+    color:black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.resume:hover{
+    box-shadow: none;
+    color:black;
+    transform: scale(1.03);
+}
+.resume:hover a{
+    color:black;
+}
+.about{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
+    gap: 50px;
+    background-image: linear-gradient(to right,#250821,#49c8f2);
+}
+.ab{
+    padding-bottom: 25px;
+    font-size:40px ;
+    color:#49c8f2;
+}
+.intro{
+    padding-top: 15px;
+    font-size: 25px;
+}
+.services{
+    background-image: linear-gradient(to right,#250821,#49c8f2);
+    padding: 40px;
+}
+.services h1{
+    text-align: center;
+    color:#49c8f2 ;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.services p{
+    font-size: 20px;
+    padding: 20px;
+}
+.box{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    height: 70vh;
+}
+.box1{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%;
+    background-image: linear-gradient(to right,#c4bcc3,#b0dfee);
+    color:black;
+    transition: all 1s ease-in-out;
+
+}
+.box2{
+    border: none;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#c4bcc3,#b0dfee);
+    color:black;
+    transition: all 1s ease-in-out;
+
+}
+.box3{
+    border: none;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#c4bcc3,#b0dfee);
+    color:black;
+    transition: all 1s ease-in-out;
+
+}
+.box1:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px #250821;
+}
+.box2:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px #250821;
+}
+.box3:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px #250821;
+}
+hr{
+    height: 5px;
+    width: 100%;
+    border: none;
+    background-color: black;
+}
+.skills{
+    background-image: linear-gradient(to right,#250821,#49c8f2);
+    height: 100vh;
+}
+.tr{
+    text-shadow: 0px 0px 5px #2dcbff;
+    position: relative;
+    height: fit-content;
+    width: 2px;
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 10px;
+    animation: link 4s steps(19) infinite;
+}
+@keyframes link {
+    0%{
+        width: 2px;
+
+    }
+    50%,52%{
+        width: 100%;
+    }
+    100%{
+        width: 2px;
+    }
+    
+}
+.tr::after{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color:#2dcbff;
+    animation: blink 0.5s infinite;
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.m{
+    text-align: center;
+    padding: 30px;
+    color: #2dcbff;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+i{
+    font-size: 200px;
+    padding: 50px;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+}
+i:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px #250821;
+}
